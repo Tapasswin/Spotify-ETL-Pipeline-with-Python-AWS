@@ -1,5 +1,7 @@
 # Spotify ETL Pipeline with Python & AWS
 
+GitHub description: Serverless Spotify ETL pipeline built with Python and AWS to extract playlist data, store it in S3, and transform it into album, artist, and song datasets.
+
 ## Project description
 This project builds a simple end-to-end ETL pipeline for Spotify playlist data. It uses the Spotify API to extract playlist and track metadata, stores raw JSON in Amazon S3, and transforms the data into clean datasets for albums, artists, and songs. The workflow is implemented using Python and AWS services, making it a practical example of a lightweight cloud data pipeline.
 
@@ -60,3 +62,5 @@ These datasets can be used for downstream analysis, reporting, or ingestion into
 
 ## Demo
 This project is a working ETL pipeline example rather than a hosted web app. A practical demo is to run the notebook to authenticate with Spotify and trigger the AWS pipeline flow to write raw and transformed files into S3.
+
+Demo workflow: authenticate with Spotify -> extract playlist metadata -> upload raw JSON to S3 -> trigger the transform Lambda -> store cleaned CSV files in the transformed_data folders.
